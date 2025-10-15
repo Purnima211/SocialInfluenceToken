@@ -9,7 +9,22 @@ It has **no imports**, **no constructor**, and can be deployed as-is on any EVM-
 
 ## 🌟 Overview
 
-The **SocialInfluenceToken** (SIT) contract enables a tokenized incentive system for social media platforms or communities.  
+| Property | Details |
+|-----------|----------|
+| **Name** | SocialInfluenceToken |
+| **Symbol** | SIT |
+| **Decimals** | 18 |
+| **Deployed Contract Address** | `0xC3664aC6357061c7caaaC01E22FE12636070A511` |
+| **Standard** | Minimal ERC-20 |
+| **Network** | (Specify network, e.g. Ethereum / Polygon / BSC / Sepolia) |
+| **Owner Set By** | `activate()` function call |
+| **Roles** | Owner, Verifier, User |
+
+---
+
+## 🚀 About the Project
+
+The **SocialInfluenceToken (SIT)** contract enables a tokenized incentive system for social media platforms or communities.  
 Users earn SIT tokens proportional to their verified social engagement (likes, shares, comments, etc.), which are submitted on-chain by trusted verifiers.
 
 ### Key Features
@@ -26,18 +41,16 @@ Users earn SIT tokens proportional to their verified social engagement (likes, s
 
 | Property | Description |
 |-----------|--------------|
-| **Name** | SocialInfluenceToken |
-| **Symbol** | SIT |
-| **Decimals** | 18 |
-| **Standard** | Minimal ERC-20 |
-| **Total Supply** | Increases as verifiers mint tokens |
-| **Roles** | Owner, Verifier, User |
+| **Contract Address** | `0xC3664aC6357061c7caaaC01E22FE12636070A511` |
+| **Network** | (Add your deployed network name here) |
+| **Total Supply** | Grows as verifiers issue tokens |
+| **Multiplier** | Default: 1 token per engagement unit (adjustable) |
 
 ---
 
-## 🚀 How It Works
+## ⚙️ How It Works
 
-1. **Deploy** the contract.  
-2. **Activate** the contract by calling:
+1. **Deploy** the contract (no constructor needed).  
+2. **Activate** ownership:
    ```solidity
    activate()
