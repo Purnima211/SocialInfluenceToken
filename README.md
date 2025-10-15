@@ -54,3 +54,16 @@ Users earn SIT tokens proportional to their verified social engagement (likes, s
 2. **Activate** ownership:
    ```solidity
    activate()
+3. Add Verifiers:
+   ```solidity
+  addVerifier(address verifier)
+4. Verifiers Issue Tokens:  
+   ```solidity
+ issueTokens(address recipient, uint256 engagementScore)
+5. Adjust Reward Rate:
+ ```solidity
+setEngagementMultiplier(uint256 newMultiplier)
+
+
+
+
